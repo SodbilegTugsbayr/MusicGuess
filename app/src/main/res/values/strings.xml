@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Song Guesser</string>
+    <string-array name="song_names">
+        <item>aduutainamar</item>
+        <item>agorahills</item>
+        <item>apt</item>
+        <item>assassin</item>
+        <item>baby</item>
+        <item>chisainbodojuzsenu</item>
+        <item>delimma</item>
+        <item>fien</item>
+        <item>hanahgui</item>
+        <item>haruharu</item>
+        <item>huitenzun</item>
+        <item>intheend</item>
+        <item>jinglebells</item>
+        <item>killthislove</item>
+        <item>lostonyou</item>
+        <item>midnight</item>
+        <item>mockingbird</item>
+        <item>oldtownroad</item>
+        <item>onthefloor</item>
+        <item>painttownred</item>
+        <item>rockstar</item>
+        <item>setgeliinbulag</item>
+        <item>tolinhul</item>
+        <item>touchmybody</item>
+        <item>unana</item>
+        <item>seigfried</item>
+        <item>shoota</item>
+        <item>zalbiragch</item>
+    </string-array>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/musicNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Дуу"
+        android:textSize="24sp"
+        android:textColor="@color/primaryTextColor"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тоглуулах"
+        android:textColor="@color/buttonTextColor"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/musicNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stopButton"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Зогсоох"
+        android:textColor="@color/buttonTextColor"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/musicNameTextView"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/musicOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сонголт 1"
+        android:textColor="@color/buttonTextColor"
+        android:background="@drawable/button_background"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/stopButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/musicOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сонголт 2"
+        android:textColor="@color/buttonTextColor"
+        android:background="@drawable/button_background"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/musicOption1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/musicOption3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сонголт 3"
+        android:textColor="@color/buttonTextColor"
+        android:background="@drawable/button_background"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/musicOption2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дараагийх"
+        android:textColor="@color/buttonTextColor"
+        android:background="@drawable/button_background"
+        android:textSize="16sp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/musicOption3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оноо: 0"
+        android:textSize="20sp"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
