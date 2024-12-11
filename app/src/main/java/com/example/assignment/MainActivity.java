@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         if (uid != null) {
             fetchUserHistory(uid);
         } else {
-            Toast.makeText(this, "User ID not found", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Хэрэглэгчийн ID олдсонгүй", Toast.LENGTH_SHORT).show();
         }
 
         btnStartGame.setOnClickListener(v -> {
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(MainActivity.this, "Failed to fetch history: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Алдаа гарлаа: " + error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

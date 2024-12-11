@@ -43,7 +43,7 @@ public class Login extends AppCompatActivity {
                 String passwordTxt = password.getText().toString();
 
                 if (emailTxt.isEmpty() || passwordTxt.isEmpty()) {
-                    Toast.makeText(Login.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this, "Бүх талбарыг бөглөнө үү", Toast.LENGTH_SHORT).show();
                 } else {
                     // Sign in with Firebase Authentication
                     mAuth.signInWithEmailAndPassword(emailTxt, passwordTxt)
@@ -55,7 +55,7 @@ public class Login extends AppCompatActivity {
                                         fetchUserRole(userId);
                                     }
                                 } else {
-                                    Toast.makeText(Login.this, "Login failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Login.this, "Нэвтрэлт амжилтгүй: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 }
                             });
                 }
@@ -78,8 +78,6 @@ public class Login extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()) {
                     String role = snapshot.getValue(String.class);
-                    Toast.makeText(Login.this, "Welcome, your role is: " + role, Toast.LENGTH_SHORT).show();
-
                     // Navigate based on role
                     if ("admin".equals(role)) {
                         startActivity(new Intent(Login.this, AdminActivity.class));
@@ -88,17 +86,17 @@ public class Login extends AppCompatActivity {
                         intent.putExtra("uid", userId);
                         startActivity(intent);
                     } else {
-                        Toast.makeText(Login.this, "Role not recognized", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this, "Эрхгүй хэрэглэгч", Toast.LENGTH_SHORT).show();
                     }
                     finish();
                 } else {
-                    Toast.makeText(Login.this, "Role not found", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this, "Эрх олдсонгүй", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(Login.this, "Failed to fetch role: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(Login.this, "Алдаа: " + error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
