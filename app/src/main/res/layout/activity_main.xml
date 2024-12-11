@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
     android:background="@color/white">
 
@@ -14,14 +12,8 @@
         android:textSize="50sp"
         android:textColor="@color/black"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="50dp"
-        android:fontFamily="sans-serif-medium"
-        android:shadowColor="#888888"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="4" />
-
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-medium" />
     <Button
         android:id="@+id/btnStartGame"
         android:layout_width="wrap_content"
@@ -30,12 +22,9 @@
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/title"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/teal_700"
-        android:textColor="@color/white"
-        android:padding="12dp"
-        android:elevation="4dp"
-        android:fontFamily="sans-serif" />
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/btnExit"
@@ -47,8 +36,26 @@
         android:layout_below="@id/btnStartGame"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/teal_200"
-        android:textColor="@color/white"
-        android:padding="12dp"
-        android:elevation="4dp"
-        android:fontFamily="sans-serif" />
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Түүх"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnExit"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history"
+        android:layout_marginTop="20dp"
+        android:dividerHeight="10dp"
+        android:padding="10dp" />
+
 </RelativeLayout>

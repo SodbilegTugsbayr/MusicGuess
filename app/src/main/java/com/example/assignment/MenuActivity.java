@@ -10,6 +10,7 @@ public class MenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String uid = getIntent().getStringExtra("uid");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
 
@@ -21,21 +22,21 @@ public class MenuActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startGameActivity(5);
+                startGameActivity(5, uid);
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startGameActivity(10);
+                startGameActivity(10, uid);
             }
         });
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startGameActivity(15);  // Pass 15 songs to the GameActivity
+                startGameActivity(15, uid);  // Pass 15 songs to the GameActivity
             }
         });
 
@@ -47,9 +48,11 @@ public class MenuActivity extends AppCompatActivity {
         });
     }
 
-    private void startGameActivity(int songCount) {
+    private void startGameActivity(int songCount, String uid) {
         Intent intent = new Intent(MenuActivity.this, GameActivity.class);
         intent.putExtra("songCount", songCount);
+        intent.putExtra("uid", uid);
         startActivity(intent);
+        finish();
     }
 }

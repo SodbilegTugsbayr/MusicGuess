@@ -178,6 +178,8 @@ public class GameActivity extends AppCompatActivity {
     private void navigateToEndGameActivity() {
         Intent intent = new Intent(GameActivity.this, EndGameActivity.class);  // Specify the EndGameActivity
         intent.putExtra("finalScore", score);
+        intent.putExtra("songCount", songCount);
+        intent.putExtra("uid", getIntent().getStringExtra("uid"));
         startActivity(intent);
         finish();
     }
