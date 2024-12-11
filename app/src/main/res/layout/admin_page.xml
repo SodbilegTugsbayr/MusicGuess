@@ -1,44 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:text="Админы Самбар"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/songsLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Системд бүртгэлтэй дуунууд"
-            android:textSize="18sp"
-            android:layout_marginBottom="8dp" />
+    <TextView
+        android:id="@+id/usersLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Системд бүртгэлтэй хэрэглэгчид"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/black" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/songsRecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:nestedScrollingEnabled="false" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/usersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="16dp"
+        android:nestedScrollingEnabled="false"
+        android:backgroundTint="@color/teal_200" />
 
-        <TextView
-            android:id="@+id/usersLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Систмед бүртгэлтэй хэрэглэгчид"
-            android:textSize="18sp"
-            android:layout_marginBottom="8dp" />
+    <TextView
+        android:id="@+id/songsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Системд бүртгэлтэй дуунууд"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/black" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/usersRecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:nestedScrollingEnabled="false" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/songsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:nestedScrollingEnabled="false"
+        android:backgroundTint="@color/teal_200" />
 
-    </LinearLayout>
-</ScrollView>
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Гарах"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:elevation="4dp" />
+</LinearLayout>
