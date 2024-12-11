@@ -12,39 +12,47 @@
         android:layout_height="wrap_content"
         android:text="Нэвтрэх"
         android:textStyle="bold"
-        android:textSize="20dp"
-        android:gravity="center"/>
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:id="@+id/mobile"
-        android:hint="Phone"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email"
+        android:hint="Цахим шуудан"
         android:maxLines="1"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:layout_margin="20dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:id="@+id/password"
-        android:hint="Password"
+        android:hint="Нууц үг"
         android:maxLines="1"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:layout_margin="20dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
         />
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/loginBtn"
-        android:text="Нэвтрэх"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"/>
+        android:text="Нэвтрэх"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,13 +62,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Бүртгэл үүсгэх"/>
+            android:text="Бүртгэл үүсгэх"
+            android:textColor="@color/black"/>
         <TextView
             android:layout_marginStart="5dp"
             android:id="@+id/registerNowBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Бүртгүүлэх"
+            android:textColor="@color/teal_500"
             android:textStyle="bold"/>
     </LinearLayout>
+    <TextView
+        android:id="@+id/forgotPasswordLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нууц үгээ мартсан уу?"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="12dp"/>
 </LinearLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Song Guesser</string>
+    <string name="app_name">Аяыг таа</string>
     <string-array name="song_names">
         <item>aduutainamar</item>
         <item>agorahills</item>

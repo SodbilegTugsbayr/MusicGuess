@@ -12,91 +12,105 @@
         android:layout_height="wrap_content"
         android:text="Бүртгүүлэх"
         android:textStyle="bold"
-        android:textSize="20dp"
-        android:gravity="center"/>
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
         android:id="@+id/name"
-        android:hint="name"
+        android:hint="Нэр"
         android:maxLines="1"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:id="@+id/email"
-        android:hint="email"
+        android:hint="Цахим шуудан"
         android:maxLines="1"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:id="@+id/mobile"
-        android:hint="Phone"
+        android:hint="Утасны дугаар"
         android:maxLines="1"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:id="@+id/password"
-        android:hint="Password"
+        android:hint="Нууц үг"
         android:maxLines="1"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:id="@+id/conpassword"
-        android:hint="Confirm Password"
+        android:hint="Нууц үг давтах"
         android:maxLines="1"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
         />
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/registerBtn"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
         android:text="Бүртгүүлэх"
-        android:layout_marginStart="20dp"/>
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Хэрэв та бүртгэлтэй бол"/>
+            android:text="Хэрэв та бүртгэлтэй бол"
+            android:textColor="@color/black"/>
         <TextView
             android:layout_marginStart="5dp"
             android:id="@+id/loginNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Нэвтрэх"
+            android:textColor="@color/teal_500"
             android:textStyle="bold"/>
     </LinearLayout>
 </LinearLayout>

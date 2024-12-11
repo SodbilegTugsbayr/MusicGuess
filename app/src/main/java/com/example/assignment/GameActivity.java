@@ -177,8 +177,8 @@ public class GameActivity extends AppCompatActivity {
     // Method to navigate to the EndGameActivity after the game ends
     private void navigateToEndGameActivity() {
         Intent intent = new Intent(GameActivity.this, EndGameActivity.class);  // Specify the EndGameActivity
-        intent.putExtra("finalScore", score);  // Pass the score to the new activity (optional)
+        intent.putExtra("finalScore", score);
         startActivity(intent);
-        finish();  // Finish the current activity so the user can't go back to the game
+        finish();
     }
 }
